@@ -16,6 +16,9 @@ int main(int argc, char *argv[])
 //    Tuple tup;
 
     Map mp;
+    char c = 'a';
+    std::string str =  "aaba";
+    std::cout << "Freq of the char is " << mp.getCharFreq(str, c) << std::endl;
 
     return 0;
 }

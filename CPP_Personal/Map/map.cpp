@@ -1,7 +1,5 @@
 #include "map.h"
-#include <map>
-#include <string>
-#include <iostream>
+
 
 Map::Map()
 {
@@ -70,3 +68,28 @@ Map::Map()
         std::cout << mp.first << " : " << mp.second << std::endl;
     }
 }
+
+unsigned int Map::getCharFreq(std::string str, char c)
+{
+    std::map<char, unsigned int> freq;
+    for (size_t i = 0; i < str.length(); i++) {
+
+        if(freq.find(c) == freq.end())
+            freq[str[i]] = 0;
+
+        freq[str[i]]++;
+    }
+
+    return freq[c];
+}
+
+//unsigned int Map::getCharFreq(std::string str, char c)
+//{
+//    std::map<char, unsigned int> freq;
+//    for (size_t i = 0; i < str.length(); i++) {
+//        freq[str[i]]++; // Count the frequency of each character in the string
+//    }
+
+//    // Return the frequency of the specified character 'c'
+//    return freq[c];
+//}
