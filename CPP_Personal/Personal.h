@@ -7,7 +7,7 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class Personal; }
 QT_END_NAMESPACE
 
-class Personal : public QMainWindow
+class Personal : public QObject
 {
     Q_OBJECT
 

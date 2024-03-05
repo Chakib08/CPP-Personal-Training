@@ -1,0 +1,13 @@
+release/map.o
+release/pointer.o
+release/consumer.o
+release/producer.o
+release/smart_pointer.o
+release/train.o
+release/tuple.o
+release/main.o
+release/Test.o
+release/qrc_qmake_qmake_qm_files.o
+release/moc_consumer.o
+release/moc_producer.o
+release/moc_train.o

@@ -11,21 +11,26 @@ CONFIG += c++17
 SOURCES += \
     Map/map.cpp \
     Pointers/pointer.cpp \
+    QT6_INTER/Consumer/consumer.cpp \
+    QT6_INTER/Producer/producer.cpp \
+    Smart_Pointers/smart_pointer.cpp \
+    Train/train.cpp \
     Tuple/tuple.cpp \
     main.cpp \
-    Personal.cpp \
     Test/Test.cpp
 
 HEADERS += \
     Map/map.h \
-    Personal.h \
     Pointers/pointer.h \
+    QT6_INTER/Consumer/consumer.h \
+    QT6_INTER/Producer/producer.h \
+    Smart_Pointers/smart_pointer.h \
     Test/Test.h \
+    Train/train.h \
     Tuple/tuple.h
 
 
-FORMS += \
-    Personal.ui
+FORMS +=
 
 TRANSLATIONS += \
     CPP_Personal_en_150.ts

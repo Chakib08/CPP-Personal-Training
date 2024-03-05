@@ -1,0 +1,30 @@
+******************* Static VS Dynamic libraries *******************
+* Static libararies are loaded into memory in compile time and are linked directly into the executable, resulting in larger executable files
+* Dynamic libarires are loaded into memory in run time 
+
+Static and dynamic libraries are both types of libraries used in software development to organize and distribute reusable code. The main difference between them lies in how they are linked with executable programs and how they are loaded into memory during runtime:
+
+Static libraries, also known as "archives," contain compiled object code that is linked directly into the executable at compile time.
+When you link a static library with your program, the linker extracts the necessary object files from the library and includes them directly in the executable file.
+This means that the code from the static library becomes a part of the final executable, and the executable does not have any dependencies on the library files at runtime.
+Static libraries are easy to use and distribute because they encapsulate all their dependencies, making the executable self-contained.
+However, this can lead to larger executable file sizes, as the entire library code is included in each executable that uses it.
+Dynamic Libraries:
+
+Dynamic libraries, also known as "shared libraries" or "DLLs" (Dynamic Link Libraries), contain compiled object code that is linked to the executable at runtime.
+When you link a dynamic library with your program, the linker records information about the library's dependencies and where to find them, but it does not include the library code in the executable.
+Instead, the dynamic library files (.dll files on Windows, .so files on Unix/Linux, .dylib files on macOS) are separate files that are loaded into memory by the operating system when the program starts.
+Multiple executables can share the same dynamic library, reducing overall disk space usage and memory consumption.
+Dynamic libraries allow for easier updates and maintenance, as changes to the library can be propagated to all programs that use it without recompiling them.
+However, dynamic libraries introduce runtime dependencies, as the executable requires the presence of the library files to run. If the required library is missing or incompatible, the program will fail to execute.
+In summary, the main differences between static and dynamic libraries lie in how they are linked with executables and how they are loaded into memory at runtime. Static libraries are linked directly into the executable, resulting in larger executable files, while dynamic libraries are loaded into memory at runtime, allowing for shared dependencies and easier maintenance. Each type has its own advantages and use cases, and the choice between them depends on factors such as performance requirements, deployment considerations, and ease of maintenance.
+
+
+
+
+
+******************* How to return multuiple values in a function *******************
+* Using pointers : void func(int* ptr1, int* ptr2) { *ptr1 = 0, *ptr2 = 1} --> in the main function : int* a, b; func(&a, &b);
+* Using references : void func(int& ref1, int& ref2) { ref1 = 0, ref2 = 1} --> in the main function : int a, b; func(a, b);
+* Using std::vector, std::array, std::tuple etc.
+* Using struct and class

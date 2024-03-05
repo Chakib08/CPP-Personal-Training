@@ -1,0 +1,13 @@
+debug/map.o
+debug/pointer.o
+debug/consumer.o
+debug/producer.o
+debug/smart_pointer.o
+debug/train.o
+debug/tuple.o
+debug/main.o
+debug/Test.o
+debug/qrc_qmake_qmake_qm_files.o
+debug/moc_consumer.o
+debug/moc_producer.o
+debug/moc_train.o

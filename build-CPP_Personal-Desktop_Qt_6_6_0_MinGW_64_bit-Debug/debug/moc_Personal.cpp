@@ -74,7 +74,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSPersonalENDCLASS[] = {
 };
 
 Q_CONSTINIT const QMetaObject Personal::staticMetaObject = { {
-    QMetaObject::SuperData::link<QMainWindow::staticMetaObject>(),
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_CLASSPersonalENDCLASS.offsetsAndSizes,
     qt_meta_data_CLASSPersonalENDCLASS,
     qt_static_metacall,
@@ -104,12 +104,12 @@ void *Personal::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_CLASSPersonalENDCLASS.stringdata0))
         return static_cast<void*>(this);
-    return QMainWindow::qt_metacast(_clname);
+    return QObject::qt_metacast(_clname);
 }
 
 int Personal::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QMainWindow::qt_metacall(_c, _id, _a);
+    _id = QObject::qt_metacall(_c, _id, _a);
     return _id;
 }
 QT_WARNING_POP
